@@ -11,6 +11,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!-- All Fonts Used -->
 <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Yrsa" rel="stylesheet">
 	<title>Eternity</title>
 	<style>
 	.title {
@@ -24,11 +25,9 @@
 		color: white;
 		background-color: black;
 		top: 100px;
-	}
-	li a  {
-		padding: 100px;
-		text-decoration: none;
-
+		list-style-type: none;
+		font-family: 'Yrsa', serif;
+		font-size: 30px;	
 	}
 	.chat {
 		border: 1px solid blue;
@@ -40,7 +39,7 @@
 	.gametitle {
 		background-color: blue;
 		margin-left: -2%;
-		height: 100px;
+		height: 98px;
 		color: white;
 	}
 	.desc {
@@ -54,15 +53,38 @@
 		height: 54px;
 		margin-left: -2%;
 	}
+	.nav {
+		border: 1px solid blue;
+		height: 50px;
+		margin-top: 2%;
+		text-decoration: none;
+		text-align: center;
+		font-size: 35px;
+		font-family: 'Yrsa', serif;
+	}
+	.naved {
+		display: inline;
+		list-style-type: none;
+	}
 	</style>
 </head>
 <body>
 	<div class="col-lg-6 title col-lg-offset-3 title">
 	<h1> Eternity </h1>
 	</div>
+	<div class="col-lg-6 nav col-lg-offset-3 nav">
+		<ul class="naved">
+			<li class="naved">
+				<a href="AboutUs">AboutUs</a>
+			</li>
+			<li class="naved">
+				<a href="Home">Home</a>
+			</li>
+		</ul>
+	</div>
 	<div class="clearfix"></div>
 	<div class="col-lg-2 sidebar">
-		<ul>
+		<ul class="sidebar">
 		<li>	
 			<a href="Game1">Game1</a>
 		</li>
