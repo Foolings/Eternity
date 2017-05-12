@@ -22,7 +22,6 @@ body {
 		font-family: 'Architects Daughter', cursive;
 		margin-top: 20%;
 		text-align: center;
-		color: #00B8FF;
 	}
 	h1 {
 		font-size: 80px;
@@ -31,11 +30,13 @@ body {
 		position: absolute;
 		border: 1px solid #75C6C9;
 		height: 350px;
+		width: 510px;
 	}
 	.bottom-left {
 		border: 1px solid #75C6C9;
 		height: 350px;
 		margin-top: 25%;
+		width: 510px;
 		position: absolute;
 	}
 	.top-right {
@@ -43,12 +44,14 @@ body {
 		position: absolute;
 		height: 350px;
 		margin-left: 65%;
+		width: 510px;
 	}
 	.bottom-right {
 		position: absolute;
 		border: 1px solid #75C6C9;
 		height: 350px;
 		margin-top: 25%;
+		width: 510px;
 		margin-left: 65%;				
 	}
 	.nav {
@@ -69,7 +72,7 @@ body {
 				<a href="EternityAboutUs.html">AboutUs</a>
 			</li>
 			<li class="naved">
-				<a href="Eternity.html">Chat</a>
+				<a href="chat.html">Chat</a>
 			</li>
 		</ul>
 	</div>
@@ -87,7 +90,12 @@ body {
 	<img src="http://orig13.deviantart.net/5442/f/2015/315/d/c/eternity_by_jakeukalane-d9f2uot.gif" width="490" height="348"></img>
 </div>
 <div class="col-lg-4 bottom-right">
-	<img src="https://s-media-cache-ak0.pinimg.com/originals/8a/f5/08/8af508cddb6f06038b055ed03f70a7d6.gif" width="490" height="348"></img
+	<img src="https://s-media-cache-ak0.pinimg.com/originals/8a/f5/08/8af508cddb6f06038b055ed03f70a7d6.gif" width="490" height="348"></img>
 </div>
 </body>
+<script>
+var colors = ['#ff0000', '#00ff00', '#0000ff'];
+var random_color = colors[Math.floor(Math.random() * colors.length)]
+$('h1').css('color', random_color);
+</script>
 </html>

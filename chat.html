@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!-- JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -33,7 +35,7 @@
 		border: 1px solid blue;
 		top:100px;
 		height: 735px;
-		background-color: black;
+		background-color: #3f4851;
 		margin-left: 5%;
 	}
 	.gametitle {
@@ -48,10 +50,12 @@
 		color: white;
 	}
 	.talk {
-		background-color: orange;
-		margin-top: 61%;
+		background-color: #3f4851;
+		margin-top: 53%;
 		height: 54px;
 		margin-left: -2%;
+		width: 100px;
+		position: absolute;
 	}
 	.nav {
 		border: 1px solid blue;
@@ -86,18 +90,18 @@
 	<div class="col-lg-2 sidebar">
 		<ul class="sidebar">
 		<li>	
-			<a href="Game1">Game1</a>
+			<a href="chat.html">Destiny</a>
 		</li>
-		<li><a href="Game2">Game2</a>
+		<li><a href="game2.html">Uncharted</a>
 		</li>
-		<li><a href="Game3">Game3</a>
+		<li><a href="game3.html">Call Of Duty</a>
 		</li>
 		</ul>
 	</div>
 	<div class="col-lg-8 chat">
 	<div class="clearfix"></div>
 		<div class="container-fluid">
-			<div class="col-md-3 gametitle">GameTitle</div>
+			<div class="col-md-3 gametitle">Destiny</div>
 			<div class="col-md-9 desc">Description</div>
 			<div class="col-md-9 talk">
 			<div class="cha">
@@ -105,7 +109,20 @@
 				</div>
 			</div>
 		</div>
-
 	</div>
 </body>
+				<button class="hidebutton">Click To Hide Chat</button>
+				<button class="showbutton">Click To Show Chat</button>
+<script>
+
+//When clicked, chat box will be hidden
+$(".hidebutton").click(function(){
+	$(".chat").hide()
+})
+//when clicked, chat box will be shown
+$(".showbutton").click(function(){
+	$(".chat").show()
+})
+</script>
+
 </html>
