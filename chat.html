@@ -16,6 +16,9 @@
 <link href="https://fonts.googleapis.com/css?family=Yrsa" rel="stylesheet">
 	<title>Eternity</title>
 	<style>
+	body {
+		background-image:url("http://h5ckfun.info/wp-content/uploads/2016/06/Destiny.jpg");
+	}
 	.title {
 		background-color: black;
 		text-align: center;
@@ -26,36 +29,30 @@
 		height: 933px;
 		color: white;
 		background-color: black;
-		top: 100px;
+		top: 50px;
 		list-style-type: none;
 		font-family: 'Yrsa', serif;
 		font-size: 30px;	
 	}
 	.chat {
 		border: 1px solid blue;
-		top:100px;
-		height: 735px;
+		top: 50px;
+		height: 933px;
 		background-color: #3f4851;
-		margin-left: 5%;
 	}
 	.gametitle {
-		background-color: blue;
-		margin-left: -2%;
-		height: 98px;
-		color: white;
+		background-color: #352fd8;
+		height: 85px;
+		color: black;
+		text-align: center;
+		font-size: 30px;
 	}
 	.desc {
-		background-color: red;
-		height: 100px;
-		color: white;
-	}
-	.talk {
-		background-color: #3f4851;
-		margin-top: 53%;
-		height: 54px;
-		margin-left: -2%;
-		width: 100px;
-		position: absolute;
+		background-color: #427fed;
+		height: 85px;
+		color: black;
+		text-align: center;
+		font-size: 25px;
 	}
 	.nav {
 		border: 1px solid blue;
@@ -65,10 +62,17 @@
 		text-align: center;
 		font-size: 35px;
 		font-family: 'Yrsa', serif;
+		background-color: #0f1c33;
 	}
 	.naved {
 		display: inline;
 		list-style-type: none;
+	}
+	.Talk  {
+		margin-top: 19%;
+		margin-right:30%;
+		position: absolute;
+		width: 700px;
 	}
 	</style>
 </head>
@@ -76,6 +80,7 @@
 	<div class="col-lg-6 title col-lg-offset-3 title">
 	<h1> Eternity </h1>
 	</div>
+	<div class="clearfix"></div>
 	<div class="col-lg-6 nav col-lg-offset-3 nav">
 		<ul class="naved">
 			<li class="naved">
@@ -87,7 +92,7 @@
 		</ul>
 	</div>
 	<div class="clearfix"></div>
-	<div class="col-lg-2 sidebar">
+	<div class="col-sm-2 sidebar">
 		<ul class="sidebar">
 		<li>	
 			<a href="chat.html">Destiny</a>
@@ -98,21 +103,18 @@
 		</li>
 		</ul>
 	</div>
-	<div class="col-lg-8 chat">
-	<div class="clearfix"></div>
-		<div class="container-fluid">
-			<div class="col-md-3 gametitle">Destiny</div>
-			<div class="col-md-9 desc">Description</div>
-			<div class="col-md-9 talk">
-			<div class="cha">
-				<input type="Anything" placeholder="Chat here..." style="width: 500px; height: 53px; margin-left: -2%"></input>
-				</div>
-			</div>
+	<div class="col-sm-8 col-sm-offset-1 chat">
+		<div class="col-sm-6 gametitle">Destiny</div>
+		<div class="col-sm-6 desc">Description</div>
+			<img src="https://lh4.googleusercontent.com/7twsUW0Cfm19clsDHMIKBz0R8oKRBzPObdp5erVO47sTvwijtyFQdejSZReDD0ayLVZWl9ixHA=s640-h400-e365" width="900"></img> 
+		<div class="Talk">
+			<input type="Anything" class="form-control" placeholder="Chat Here..."></input>
 		</div>
 	</div>
+<button class="hidebutton">Click To Hide Chat</button>
+<button class="showbutton">Click To Show Chat</button>
+<div class="clearfix"></div>
 </body>
-				<button class="hidebutton">Click To Hide Chat</button>
-				<button class="showbutton">Click To Show Chat</button>
 <script>
 
 //When clicked, chat box will be hidden
