@@ -1,0 +1,25 @@
+	body {
+		text-align: center;
+		background-color: black;
+	}
+	.title {
+		color: white;
+		font-family: 'Taviraj', serif;
+	}
+	.p {
+		color: white;
+		font-family: 'Montserrat', sans-serif;
+
+	}
+	.nav {
+		height: 50px;
+		margin-top: 2%;
+		text-decoration: none;
+		text-align: center;
+		font-size: 35px;
+		font-family: 'Yrsa', serif;
+	}
+	.naved {
+		display: inline;
+		list-style-type: none;
+	}

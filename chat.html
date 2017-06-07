@@ -5,6 +5,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="chat.css">
 
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -15,66 +16,6 @@
 <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Yrsa" rel="stylesheet">
 	<title>Eternity</title>
-	<style>
-	body {
-		background-image:url("http://h5ckfun.info/wp-content/uploads/2016/06/Destiny.jpg");
-	}
-	.title {
-		background-color: black;
-		text-align: center;
-		font-family: 'Inknut Antiqua', serif;
-		color: white;
-	}
-	.sidebar {
-		height: 933px;
-		color: white;
-		background-color: black;
-		top: 50px;
-		list-style-type: none;
-		font-family: 'Yrsa', serif;
-		font-size: 30px;	
-	}
-	.chat {
-		border: 1px solid blue;
-		top: 50px;
-		height: 933px;
-		background-color: #3f4851;
-	}
-	.gametitle {
-		background-color: #352fd8;
-		height: 85px;
-		color: black;
-		text-align: center;
-		font-size: 30px;
-	}
-	.desc {
-		background-color: #427fed;
-		height: 85px;
-		color: black;
-		text-align: center;
-		font-size: 25px;
-	}
-	.nav {
-		border: 1px solid blue;
-		height: 50px;
-		margin-top: 2%;
-		text-decoration: none;
-		text-align: center;
-		font-size: 35px;
-		font-family: 'Yrsa', serif;
-		background-color: #0f1c33;
-	}
-	.naved {
-		display: inline;
-		list-style-type: none;
-	}
-	.Talk  {
-		margin-top: 19%;
-		margin-right:30%;
-		position: absolute;
-		width: 700px;
-	}
-	</style>
 </head>
 <body>
 	<div class="col-lg-6 title col-lg-offset-3 title">
@@ -94,17 +35,13 @@
 	<div class="clearfix"></div>
 	<div class="col-sm-2 sidebar">
 		<ul class="sidebar">
-		<li>	
-			<a href="chat.html">Destiny</a>
-		</li>
-		<li><a href="game2.html">Uncharted</a>
-		</li>
-		<li><a href="game3.html">Call Of Duty</a>
-		</li>
+		<li class="destiny">Destiny</li>
+		<li class="uncharted">Uncharted</li>
+		<li class="COD">Call Of Duty</li>
 		</ul>
 	</div>
 	<div class="col-sm-8 col-sm-offset-1 chat">
-		<div class="col-sm-6 gametitle">Destiny</div>
+		<div class="col-sm-6 gametitle"></div>
 		<div class="col-sm-6 desc">Description</div>
 			<img src="https://lh4.googleusercontent.com/7twsUW0Cfm19clsDHMIKBz0R8oKRBzPObdp5erVO47sTvwijtyFQdejSZReDD0ayLVZWl9ixHA=s640-h400-e365" width="900"></img> 
 		<div class="Talk">
@@ -124,6 +61,19 @@ $(".hidebutton").click(function(){
 //when clicked, chat box will be shown
 $(".showbutton").click(function(){
 	$(".chat").show()
+})
+//When .test is clicked, background changes
+$(".COD").click(function(){
+	document.body.style.background = 'url("http://www.crossmap.com/uploads/images/3/38/33892.jpg")'
+	$('.gametitle').html("Call of Duty")
+})
+$(".uncharted").click(function(){
+	document.body.style.background = 'url("https://farm6.staticflickr.com/5624/23815901722_4d1edf4ed1_b.jpg")'
+	$('.gametitle').html("Uncharted")
+})
+$('.destiny').click(function(){
+	document.body.style.background = 'url("http://h5ckfun.info/wp-content/uploads/2016/06/Destiny.jpg")'
+	$('.gametitle').html("Destiny")
 })
 </script>
 

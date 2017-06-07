@@ -1,0 +1,58 @@
+	body {
+		background-image:url("http://h5ckfun.info/wp-content/uploads/2016/06/Destiny.jpg");
+	}
+	.title {
+		background-color: black;
+		text-align: center;
+		font-family: 'Inknut Antiqua', serif;
+		color: white;
+	}
+	.sidebar {
+		height: 933px;
+		color: white;
+		background-color: black;
+		top: 50px;
+		list-style-type: none;
+		font-family: 'Yrsa', serif;
+		font-size: 30px;	
+	}
+	.chat {
+		border: 1px solid blue;
+		top: 50px;
+		height: 933px;
+		background-color: #3f4851;
+	}
+	.gametitle {
+		background-color: #352fd8;
+		height: 85px;
+		color: black;
+		text-align: center;
+		font-size: 30px;
+	}
+	.desc {
+		background-color: #427fed;
+		height: 85px;
+		color: black;
+		text-align: center;
+		font-size: 25px;
+	}
+	.nav {
+		border: 1px solid blue;
+		height: 50px;
+		margin-top: 2%;
+		text-decoration: none;
+		text-align: center;
+		font-size: 35px;
+		font-family: 'Yrsa', serif;
+		background-color: #0f1c33;
+	}
+	.naved {
+		display: inline;
+		list-style-type: none;
+	}
+	.Talk  {
+		margin-top: 19%;
+		margin-right:30%;
+		position: absolute;
+		width: 700px;
+	}

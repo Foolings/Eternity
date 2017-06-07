@@ -1,0 +1,48 @@
+body {
+	background-color: black;
+}
+	.middle {
+		font-family: 'Architects Daughter', cursive;
+		margin-top: 20%;
+		text-align: center;
+	}
+	h1 {
+		font-size: 80px;
+	}
+	.top-left {
+		position: absolute;
+		border: 1px solid #75C6C9;
+		height: 350px;
+		width: 510px;
+	}
+	.bottom-left {
+		border: 1px solid #75C6C9;
+		height: 350px;
+		margin-top: 25%;
+		width: 510px;
+		position: absolute;
+	}
+	.top-right {
+		border: 1px solid #75C6C9;
+		position: absolute;
+		height: 350px;
+		margin-left: 65%;
+		width: 510px;
+	}
+	.bottom-right {
+		position: absolute;
+		border: 1px solid #75C6C9;
+		height: 350px;
+		margin-top: 25%;
+		width: 510px;
+		margin-left: 65%;				
+	}
+	.nav {
+		height: 50px;
+		margin-top: 2%;
+		text-decoration: none;
+		text-align: center;
+		font-size: 35px;
+		font-family: 'Yrsa', serif;
+		position: absolute;
+	}
