@@ -9,7 +9,7 @@
 	}
 	.sidebar {
 		height: 933px;
-		color: white;
+		color: #016BC8;
 		background-color: black;
 		top: 50px;
 		list-style-type: none;
@@ -27,7 +27,8 @@
 		height: 85px;
 		color: black;
 		text-align: center;
-		font-size: 30px;
+		font-size: 35px;
+		font-family: 'Yrsa', serif;
 	}
 	.desc {
 		background-color: #427fed;
@@ -35,6 +36,7 @@
 		color: black;
 		text-align: center;
 		font-size: 25px;
+		font-family: 'Yrsa', serif;
 	}
 	.nav {
 		border: 1px solid blue;
@@ -55,4 +57,13 @@
 		margin-right:30%;
 		position: absolute;
 		width: 700px;
+		font-family: 'Mogra', cursive;
+	}
+	.submit {
+		position: absolute;
+		margin-left: 720px;
+		padding-bottom: 10px;
+		font-family: 'Mogra', cursive;
+		color: blue;
+		background-color: black;
 	}
